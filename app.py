@@ -3,17 +3,20 @@ from timetrack import calculate_hours
 
 def main():
     print("TimeTrack Pro")
-    print("-" * 20)
+    print("=" * 25)
 
     employee = input("Employee name: ")
 
-    start = float(input("Start hour: "))
-    end = float(input("End hour: "))
+    start = float(input("Start hour (24h format): "))
+    end = float(input("End hour (24h format): "))
 
     hours = calculate_hours(start, end)
 
-    print()
+    print("\nWork Summary")
+    print("-" * 25)
     print(f"Employee: {employee}")
+    print(f"Start time: {start}")
+    print(f"End time: {end}")
     print(f"Hours worked: {hours}")
 
 
