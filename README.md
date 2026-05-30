@@ -130,7 +130,7 @@ Example:
 main
 │
 ├── feature-timelog
-└── feature-ci
+└── feature-fix-flake8
 ```
 
 ### Why This Strategy Was Chosen
